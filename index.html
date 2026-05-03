@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Devaprakash S</title>
+<meta name="description" content="Software Developer · Full-Stack · Cloud · ML · MCA @ Anna University CEG"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400;1,600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- CURSOR -->
+<div id="cursor"></div>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-l">
+    <a class="nav-logo" href="#hero">DEVAPRAKASH S</a>
+    <span class="nav-role">Aspiring Software Engineer</span>
+  </div>
+  <ul class="nav-links" id="nl">
+    <li><a href="#about">About</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="resume.pdf" target="_blank" class="nav-cta">Resume</a></li>
+  </ul>
+  <button class="hamburger" id="hbg" aria-label="Menu"><span></span><span></span></button>
+</nav>
+
+<!-- ═══════════════════ HERO ═══════════════════ -->
+<section id="hero" class="hero">
+
+  <div class="hero-eyebrow">
+    <span>Aspiring Software Engineer</span>
+    <!-- <span class="eyebrow-dot">·</span>
+    <span>BUILDER</span>
+    <span class="eyebrow-dot">·</span>
+    <span>FULL-STACK ENGINEER</span> -->
+  </div>
+
+  <div class="hero-name-wrap">
+    <h1 class="hero-name">
+      <span class="hn hn1" data-word="DEVA">DEVA</span>
+      <span class="hn hn2" data-word="PRAKASH">PRAKASH</span>
+    </h1>
+    <div class="hero-photo-container">
+      <img src="photo.png" alt="Devaprakash S" class="hero-photo" id="heroPhoto"/>
+    </div>
+  </div>
+
+  <div class="hero-foot">
+    <p class="hero-tagline"><em>Making sense of complexity, one system at a time</em></p>
+    <div class="hero-ctas">
+      <a href="#work" class="btn-ghost">View Work ↓</a>
+      <a href="#contact" class="btn-ghost">Contact</a>
+    </div>
+  </div>
+
+</section>
+
+<!-- ═══════════════════ ABOUT ═══════════════════ -->
+<section id="about" class="section">
+  <div class="wrap">
+    <div class="section-header">
+      <span class="s-label">/ ABOUT</span>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-left">
+        <h2 class="s-title">
+          MCA Graduate.<br/>
+          <em>Aspiring Software Engineer.</em><br/>
+          <!-- Chennai. -->
+        </h2>
+      </div>
+
+      <div class="about-right">
+        <p>
+  Recently completed my MCA from 
+  <strong>Anna University, College of Engineering Guindy</strong>, 
+  with a strong foundation in software development, data structures, 
+  and system design. Passionate about building scalable applications 
+  and solving real-world problems through code.
+</p>
+
+<p>
+  Over the years, I’ve developed hands-on experience in full-stack development, 
+  cloud technologies, and machine learning by building projects that turn ideas 
+  into practical solutions. I enjoy writing clean, efficient code and learning 
+  how systems work at scale.
+</p>
+
+<p>
+  As an <strong>aspiring software engineer</strong>, I’m focused on strengthening 
+  my problem-solving skills, mastering core computer science concepts, and contributing 
+  to impactful products. Currently seeking opportunities to learn, build, and grow 
+  in a professional engineering environment.
+</p>
+      </div>
+    </div>
+  </div>
+</section>  
+
+<!-- ═══════════════════ WORK ═══════════════════ -->
+<section id="work" class="section section-dark">
+  <div class="wrap">
+    <div class="section-header">
+      <span class="s-label">/ WORK</span>
+      <h2 class="s-title">Projects</h2>
+    </div>
+
+    <!-- FILTER TABS -->
+    <div class="filter-bar" id="filterBar">
+      <button class="filter-btn active" data-filter="all">All <span class="filter-count" id="fc-all">18</span></button>
+      <button class="filter-btn" data-filter="web">Web Dev</button>
+      <button class="filter-btn" data-filter="cloud">Cloud</button>
+      <button class="filter-btn" data-filter="ai">AI</button>
+      <button class="filter-btn" data-filter="ml">ML / DL</button>
+      <button class="filter-btn" data-filter="nlp">NLP</button>
+      <button class="filter-btn" data-filter="android">Android</button>
+      <button class="filter-btn" data-filter="data">Data Science</button>
+      <button class="filter-btn" data-filter="iot">IoT</button>
+      <button class="filter-btn" data-filter="cv">OpenCV</button>
+    </div>
+
+    <!-- PROJECTS GRID -->
+    <div class="projects-grid" id="projectsGrid">
+
+      <!-- 01 Smart Café Cloud System (was DevBuck) -->
+      <article class="pcard" data-cats="web cloud ai">
+        <div class="pcard-top">
+          <div class="pcard-meta">
+            <span class="pcard-num">01</span>
+            <span class="pcard-year">2025</span>
+          </div>
+          <div class="pcard-cats">
+            <span class="pcat web">Web Dev</span>
+            <span class="pcat cloud">Cloud</span>
+            <span class="pcat ai">AI</span>
+          </div>
+        </div>
+        <h3 class="pcard-title">Smart Café Cloud System</h3>
+        <p class="pcard-sub">Multi-Cloud Café Management System</p>
+        <p class="pcard-desc">Serverless café management using AWS Lambda, API Gateway, Firebase Firestore and Google Dialogflow for AI-powered natural language ordering. Real-time admin dashboards with full CRUD, live order tracking, and conversational chatbot — all synced across devices.</p>
+        <div class="pcard-tags">
+          <span>AWS Lambda</span><span>GCP</span><span>Firebase</span>
+          <span>React</span><span>Dialogflow</span><span>API Gateway</span>
+        </div>
+        <div class="pcard-links">
+          <a href="https://github.com/Devaprakash47/Smart_Cafe_Cloud_System" class="plink" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </article>
+
+      <!-- 02 DevSync -->
+      <article class="pcard" data-cats="web cloud">
+        <div class="pcard-top">
+          <div class="pcard-meta">
+            <span class="pcard-num">02</span>
+            <span class="pcard-year">2025</span>
+          </div>
+          <div class="pcard-cats">
+            <span class="pcat web">Web Dev</span>
+            <span class="pcat cloud">Cloud</span>
+          </div>
+        </div>
+        <h3 class="pcard-title">DevSync</h3>
+        <p class="pcard-sub">Real-Time Collaborative Coding Platform</p>
+        <p class="pcard-desc">Browser-based collaborative IDE with CodeMirror and Liveblocks enabling simultaneous multi-user editing with live cursor presence. Clerk authentication with RBAC. Cloud code execution via Piston API — Python, JavaScript, C++, Java with stdin/stdout handling.</p>
+        <div class="pcard-tags">
+          <span>MERN</span><span>Liveblocks</span><span>Redux</span>
+          <span>Clerk</span><span>CodeMirror</span><span>Piston API</span>
+        </div>
+        <div class="pcard-links">
+          <a href="https://github.com/Devaprakash47/DevSync" class="plink" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </article>
+
+      <!-- 03 DSA Search Engine -->
+      <article class="pcard" data-cats="web nlp data">
+        <div class="pcard-top">
+          <div class="pcard-meta">
+            <span class="pcard-num">03</span>
+            <span class="pcard-year">2025</span>
+          </div>
+          <div class="pcard-cats">
+            <span class="pcat nlp">NLP</span>
+            <span class="pcat data">Data Science</span>
+          </div>
+        </div>
+        <h3 class="pcard-title">DSA Search Engine</h3>
+        <p class="pcard-sub">NLP-Powered Problem Retrieval Platform</p>
+        <p class="pcard-desc">Search engine for 1,200+ DSA problems achieving 85% accuracy using TF-IDF and BM25 algorithms. Automated LeetCode scraping with Selenium and BeautifulSoup. NLP preprocessing — stemming, lemmatization, stop-word removal. Deployed on Render with MongoDB Atlas.</p>
+        <div class="pcard-tags">
+          <span>Flask</span><span>MongoDB</span><span>TF-IDF</span>
+          <span>BM25</span><span>NLTK</span><span>Selenium</span>
+        </div>
+        <div class="pcard-links">
+          <a href="https://github.com/Devaprakash47/Search-Engine-For-DSA" class="plink" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </article>
+
+      <!-- 04 Employee Management System (MERN + Analytics) -->
+      <article class="pcard" data-cats="web data">
+        <div class="pcard-top">
+          <div class="pcard-meta">
+            <span class="pcard-num">04</span>
+            <span class="pcard-year">2025</span>
+          </div>
+          <div class="pcard-cats">
+            <span class="pcat web">Web Dev</span>
+            <span class="pcat data">Data Science</span>
+          </div>
+        </div>
+        <h3 class="pcard-title">Employee Management System</h3>
+        <p class="pcard-sub">Full-Stack HR Analytics Platform with MERN</p>
+        <p class="pcard-desc">Comprehensive employee management system built on the MERN stack with integrated data analytics dashboards. Features employee CRUD, role management, department tracking, performance analytics, and visual reports. RESTful API backend with React-powered frontend.</p>
+        <div class="pcard-tags">
+          <span>MongoDB</span><span>Express</span><span>React</span>
+          <span>Node.js</span><span>Chart.js</span><span>REST API</span>
+        </div>
+        <div class="pcard-links">
+          <a href="https://github.com/Devaprakash47/Employee-Management-System-With-Data-Analytics-using-MERN" class="plink" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </article>
+
+      <!-- 05 Students Performance Tracker -->
+      <article class="pcard" data-cats="web data">
+        <div class="pcard-top">
+          <div class="pcard-meta">
+            <span class="pcard-num">05</span>
+            <span class="pcard-year">2025</span>
+          </div>
+          <div class="pcard-cats">
+            <span class="pcat web">Web Dev</span>
+            <span class="pcat data">Data Science</span>
+          </div>
+        </div>
+        <h3 class="pcard-title">Students Performance Tracker</h3>
+        <p class="pcard-sub">MERN-Based Academic Analytics Dashboard</p>
+        <p class="pcard-desc">Full-stack student performance tracking system using the MERN stack. Tracks grades, attendance, and academic progress with visual analytics. Features admin and student roles, subject-wise performance breakdown, and exportable reports for educators.</p>
+        <div class="pcard-tags">
+          <span>MongoDB</span><span>Express</span><span>React</span>
+          <span>Node.js</span><span>Redux</span><span>Chart.js</span>
+        </div>
+        <div class="pcard-links">
+          <a href="https://github.com/Devaprakash47/Students-Performance-Tracker-using-MERN" class="plink" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </article>
+
+      <!-- 06 Sign Language Detection -->
+      <article class="pcard" data-cats="ml cv ai">
+        <div class="pcard-top">
+          <div class="pcard-meta">
+            <span class="pcard-num">06</span>
+            <span class="pcard-year">2024</span>
+          </div>
+          <div class="pcard-cats">
+            <span class="pcat ml">ML / DL</span>
+            <span class="pcat cv">OpenCV</span>
+            <span class="pcat ai">AI</span>
+          </div>
+        </div>
+        <h3 class="pcard-title">Sign Language Detection</h3>
+        <p class="pcard-sub">Action Recognition for Sign Language using Python</p>
+        <p class="pcard-desc">Real-time sign language detection system using action recognition techniques with MediaPipe and LSTM neural networks. Captures hand and body landmarks from webcam input, processes gesture sequences, and classifies signs with high accuracy for accessibility applications.</p>
+        <div class="pcard-tags">
+          <span>Python</span><span>MediaPipe</span><span>LSTM</span>
+          <span>OpenCV</span><span>TensorFlow</span><span>NumPy</span>
+        </div>
+        <div class="pcard-links">
+          <a href="https://github.com/Devaprakash47/Sign-Language-Detection-using-Action-Recognition-with-Python" class="plink" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </article>
+
+      <!-- 07 Path Travelling & Parking Arduino Bot -->
+      <article class="pcard" data-cats="iot">
+        <div class="pcard-top">
+          <div class="pcard-meta">
+            <span class="pcard-num">07</span>
+            <span class="pcard-year">2025</span>
+          </div>
+          <div class="pcard-cats">
+            <span class="pcat iot">IoT</span>
+          </div>
+        </div>
+        <h3 class="pcard-title">Path Travelling & Parking Bot</h3>
+        <p class="pcard-sub">Arduino-Based Autonomous Navigation Robot</p>
+        <p class="pcard-desc">Autonomous Arduino robot capable of path following and automatic parking using IR sensors and ultrasonic distance sensors. Implements line-following logic, obstacle detection, and parking slot identification. Programmed in C++ with modular sensor integration.</p>
+        <div class="pcard-tags">
+          <span>Arduino</span><span>C++</span><span>IR Sensors</span>
+          <span>Ultrasonic</span><span>Embedded Systems</span>
+        </div>
+        <div class="pcard-links">
+          <a href="https://github.com/Devaprakash47/Path-travelling-and-parking-arduino-bot-main" class="plink" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </article>
+
+      <!-- 08 Food Donor (Android) -->
+      <article class="pcard" data-cats="android">
+        <div class="pcard-top">
+          <div class="pcard-meta">
+            <span class="pcard-num">08</span>
+            <span class="pcard-year">2024</span>
+          </div>
+          <div class="pcard-cats">
+            <span class="pcat android">Android</span>
+          </div>
+        </div>
+        <h3 class="pcard-title">Food Donor</h3>
+        <p class="pcard-sub">Android App for Food Donation & Distribution</p>
+        <p class="pcard-desc">Native Android application built with Kotlin that connects food donors with recipients. Features donor registration, food listing with photos, location-based matching, and real-time notifications. Firebase backend for authentication and database, with a clean Material Design UI.</p>
+        <div class="pcard-tags">
+          <span>Kotlin</span><span>Firebase</span><span>Google Maps</span>
+          <span>Material Design</span><span>Firestore</span>
+        </div>
+        <div class="pcard-links">
+          <a href="https://github.com/Devaprakash47/FOOD-DONOR" class="plink" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </article>
+
+      <!-- 09 Chat Application (Kotlin) -->
+      <article class="pcard" data-cats="android">
+        <div class="pcard-top">
+          <div class="pcard-meta">
+            <span class="pcard-num">09</span>
+            <span class="pcard-year">2024</span>
+          </div>
+          <div class="pcard-cats">
+            <span class="pcat android">Android</span>
+          </div>
+        </div>
+        <h3 class="pcard-title">Chat Application</h3>
+        <p class="pcard-sub">Real-Time Android Chat App with Kotlin</p>
+        <p class="pcard-desc">Real-time messaging Android application developed in Kotlin using Firebase Realtime Database for instant message delivery. Supports user authentication, one-on-one chat, online presence indicators, message timestamps, and a clean conversational UI.</p>
+        <div class="pcard-tags">
+          <span>Kotlin</span><span>Firebase</span><span>Realtime DB</span>
+          <span>Firebase Auth</span><span>Jetpack</span>
+        </div>
+        <div class="pcard-links">
+          <a href="https://github.com/Devaprakash47/ChatApplication-using-Kotlin" class="plink" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </article>
+
+      <!-- 10 Browser Chatbot -->
+      <article class="pcard" data-cats="web ai">
+        <div class="pcard-top">
+          <div class="pcard-meta">
+            <span class="pcard-num">10</span>
+            <span class="pcard-year">2025</span>
+          </div>
+          <div class="pcard-cats">
+            <span class="pcat web">Web Dev</span>
+            <span class="pcat ai">AI</span>
+          </div>
+        </div>
+        <h3 class="pcard-title">Browser Chatbot</h3>
+        <p class="pcard-sub">AI-Powered Conversational Chatbot for the Web</p>
+        <p class="pcard-desc">JavaScript-based browser chatbot with an AI conversational backend. Features a responsive chat UI, real-time message rendering, and natural language responses. Lightweight and embeddable, designed to work directly in the browser without heavy dependencies.</p>
+        <div class="pcard-tags">
+          <span>JavaScript</span><span>HTML</span><span>CSS</span>
+          <span>NLP API</span><span>Fetch API</span>
+        </div>
+        <div class="pcard-links">
+          <a href="https://github.com/Devaprakash47/Broswerchatbot" class="plink" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </article>
+
+      <!-- 11 GoodsKeeper -->
+      <article class="pcard" data-cats="android">
+  <div class="pcard-top">
+    <div class="pcard-meta">
+      <span class="pcard-num">11</span>
+      <span class="pcard-year">2025</span>
+    </div>
+    <div class="pcard-cats">
+      <span class="pcat android">Android</span>
+      <span class="pcat award">Winner</span>
+    </div>
+  </div>
+
+  <h3 class="pcard-title">GoodsKeeper</h3>
+  <p class="pcard-sub">Android Inventory Management App</p>
+
+  <p class="pcard-desc">
+    GoodsKeeper is a smart Android-based inventory management app built using Kotlin, Ktor, and Firebase.
+    It helps users manage goods, track stock levels, generate low-stock alerts, and securely sync data
+    using cloud services.
+  </p>
+
+  <div class="pcard-tags">
+    <span>Kotlin</span>
+    <span>Ktor</span>
+    <span>Firebase Authentication</span>
+    <span>Firebase Firestore</span>
+    <span>Firebase Storage</span>
+  </div>
+
+  <div class="pcard-links">
+    <a href="https://github.com/Devaprakash47/GoodsKeeper" class="plink" target="_blank" rel="noopener">
+      GitHub ↗
+    </a>
+  </div>
+
+  <div class="pcard-achievement">
+    <strong>KoHacks Hackathon 2025 – Winner</strong>
+    <p>Awarded for building a fast, reliable, and cloud-powered goods management system.</p>
+  </div>
+</article>
+
+      <!-- 12 APIDash CLI MCP Prototype -->
+      <article class="pcard" data-cats="web cloud">
+        <div class="pcard-top">
+          <div class="pcard-meta">
+            <span class="pcard-num">12</span>
+            <span class="pcard-year">2025</span>
+          </div>
+          <div class="pcard-cats">
+            <span class="pcat web">Web Dev</span>
+            <span class="pcat cloud">Cloud</span>
+          </div>
+        </div>
+        <h3 class="pcard-title">APIDash CLI MCP Prototype</h3>
+        <p class="pcard-sub">CLI Tool for API Testing with MCP Integration</p>
+        <p class="pcard-desc">Command-line interface prototype built with Dart for API testing and management, integrating the Model Context Protocol (MCP). Enables developers to test, document, and manage API endpoints from the terminal with structured output and automation support.</p>
+        <div class="pcard-tags">
+          <span>Dart</span><span>MCP</span><span>CLI</span>
+          <span>REST API</span><span>API Testing</span>
+        </div>
+        <div class="pcard-links">
+          <a href="https://github.com/Devaprakash47/apidash-cli-mcp-prototype" class="plink" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </article>
+
+      <!-- 13 GUVI Internship -->
+      <article class="pcard" data-cats="web">
+        <div class="pcard-top">
+          <div class="pcard-meta">
+            <span class="pcard-num">13</span>
+            <span class="pcard-year">2025</span>
+          </div>
+          <div class="pcard-cats">
+            <span class="pcat web">Web Dev</span>
+          </div>
+        </div>
+        <h3 class="pcard-title">GUVI Internship Projects</h3>
+        <p class="pcard-sub">Web Development Internship Deliverables</p>
+        <p class="pcard-desc">Collection of web development projects completed during the GUVI internship program. Includes structured HTML/CSS layouts, JavaScript interactivity, and responsive design implementations covering core front-end development skills and best practices.</p>
+        <div class="pcard-tags">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          <span>Responsive Design</span>
+        </div>
+        <div class="pcard-links">
+          <a href="https://github.com/Devaprakash47/guvi-internship" class="plink" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </article>
+
+      <!-- 14 Login & Registration MERN -->
+      <article class="pcard" data-cats="web">
+        <div class="pcard-top">
+          <div class="pcard-meta">
+            <span class="pcard-num">14</span>
+            <span class="pcard-year">2025</span>
+          </div>
+          <div class="pcard-cats">
+            <span class="pcat web">Web Dev</span>
+          </div>
+        </div>
+        <h3 class="pcard-title">Login & Registration System</h3>
+        <p class="pcard-sub">Full-Stack Auth with MERN Stack</p>
+        <p class="pcard-desc">Secure user authentication system built with the MERN stack. Implements JWT-based login and registration, bcrypt password hashing, protected routes, and session management. Clean React frontend with Express/MongoDB backend — a solid boilerplate for any web app.</p>
+        <div class="pcard-tags">
+          <span>MongoDB</span><span>Express</span><span>React</span>
+          <span>Node.js</span><span>JWT</span><span>bcrypt</span>
+        </div>
+        <div class="pcard-links">
+          <a href="https://github.com/Devaprakash47/Login-And-Registration-Using-MERN-Stack" class="plink" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </article>
+
+    </div><!-- /projects-grid -->
+
+    <!-- Empty state -->
+    <div class="projects-empty" id="projectsEmpty" style="display:none;">
+      <p>No projects in this category yet — <em>coming soon.</em></p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════ SKILLS ═══════════════════ -->
+<section id="skills" class="section">
+  <div class="wrap">
+    <div class="section-header">
+      <span class="s-label">/ SKILLS</span>
+      <h2 class="s-title">The Stack</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-col">
+        <p class="skill-cat">Languages</p>
+        <div class="skill-list">
+          <span>Python</span><span>Java</span><span>JavaScript</span>
+          <span>TypeScript</span><span>Kotlin</span><span>Dart</span>
+          <span>C</span><span>C++</span><span>Go</span><span>Bash</span>
+        </div>
+      </div>
+      <div class="skill-col">
+        <p class="skill-cat">Web & Frameworks</p>
+        <div class="skill-list">
+          <span>React.js</span><span>Node.js</span><span>Express.js</span>
+          <span>Django</span><span>Flask</span><span>Spring Boot</span>
+          <span>RESTful APIs</span>
+        </div>
+      </div>
+      <div class="skill-col">
+        <p class="skill-cat">Databases</p>
+        <div class="skill-list">
+          <span>MySQL</span><span>PostgreSQL</span>
+          <span>MongoDB</span><span>Firebase</span>
+          <span>DynamoDB</span>
+        </div>
+      </div>
+      <div class="skill-col">
+        <p class="skill-cat">Cloud & DevOps</p>
+        <div class="skill-list">
+          <span class="hl">AWS</span><span class="hl">GCP</span>
+          <span>Docker</span><span>Git</span><span>CI/CD</span>
+        </div>
+      </div>
+      <div class="skill-col">
+        <p class="skill-cat">ML / AI</p>
+        <div class="skill-list">
+          <span>Scikit-learn</span><span>TensorFlow</span><span>PyTorch</span>
+          <span>Keras</span><span>NumPy</span><span>Pandas</span>
+          <span>NLP</span><span>CNN</span><span>Transformers</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Achievements inline -->
+    <div class="wins">
+      <p class="wins-label">/ ACHIEVEMENTS</p>
+      <div class="wins-list">
+        <div class="win">
+          <span class="win-icon">🏆︎</span>
+          <div>
+            <p class="win-title">KoHacks Hackathon 2025 — Winner</p>
+            <p class="win-desc">
+              Built GoodsKeeper, an Android inventory management app using Kotlin, Ktor, and Firebase.
+              <a href="https://github.com/Devaprakash47/KoHacks-Hackathon-2025" target="_blank" rel="noopener">
+                GitHub ↗
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class="win">
+          <span class="win-icon">☁</span>
+          <div>
+            <p class="win-title">Google Cloud Arcade Facilitator '25</p>
+            <p class="win-desc">150+ labs — Compute, Kubernetes, Cloud Functions, AI/ML</p>
+          </div>
+        </div>
+        <div class="win">
+          <span class="win-icon">★</span>
+          <div>
+            <p class="win-title">HackerRank Gold — Python</p>
+            <p class="win-desc">Advanced proficiency in Python & algorithm implementation</p>
+          </div>
+        </div>
+        <div class="win">
+          <span class="win-icon">②</span>
+          <div>
+            <p class="win-title">2nd Prize · Debugging (TECHRITZ'23)</p>
+            <p class="win-desc">Java debugging, Shri Krishnaswamy College for Women</p>
+          </div>
+        </div>
+        <div class="win">
+          <span class="win-icon">②</span>
+          <div>
+            <p class="win-title">2nd Prize · Technical Presentation</p>
+            <p class="win-desc">Inter-college: Cryptocurrency, E-Commerce, Programming Languages</p>
+          </div>
+        </div>
+        <div class="win">
+          <span class="win-icon">♥</span>
+          <div>
+            <p class="win-title">NSS Volunteer</p>
+            <p class="win-desc">Rural outreach, awareness campaigns, blood donation drives</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Education inline -->
+    <div class="edu">
+      <p class="wins-label">/ EDUCATION</p>
+      <div class="edu-list">
+        <div class="edu-item">
+          <span class="edu-yr">2024 — 2026</span>
+          <div class="edu-info">
+            <p class="edu-deg">Master of Computer Applications (MCA)</p>
+            <p class="edu-school">Anna University · College of Engineering Guindy · Chennai</p>
+          </div>
+          <span class="edu-gpa">7.2 CGPA</span>
+        </div>
+        <div class="edu-item">
+          <span class="edu-yr">2021 — 2024</span>
+          <div class="edu-info">
+            <p class="edu-deg">Bachelor of Computer Applications (BCA)</p>
+            <p class="edu-school">University of Madras · Mar Gregorios College · Chennai</p>
+          </div>
+          <span class="edu-gpa">7.8 CGPA</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ CONTACT ═══════════════════ -->
+<section id="contact" class="section section-dark contact-section">
+  <div class="wrap">
+    <div class="section-header">
+      <span class="s-label">/ CONTACT</span>
+    </div>
+    <h2 class="contact-big">Let's build<br/><em>something.</em></h2>
+    <p class="contact-sub">Open to internship, SDE, and collaboration opportunities.<br/>Based in Chennai, India — available now.</p>
+
+    <div class="contact-links">
+      <a href="mailto:deva27997@gmail.com" class="cl">
+        <span class="cl-k">Email</span>
+        <span class="cl-v">deva27997@gmail.com</span>
+        <span class="cl-a">↗</span>
+      </a>
+
+      <a href="tel:+919444620013" class="cl">
+        <span class="cl-k">Phone</span>
+        <span class="cl-v">+91 9444620013</span>
+        <span class="cl-a">↗</span>
+      </a>
+
+      <a href="https://linkedin.com/in/devaprakash47" target="_blank" rel="noopener" class="cl">
+        <span class="cl-k">LinkedIn</span>
+        <span class="cl-v">linkedin.com/in/devaprakash47</span>
+        <span class="cl-a">↗</span>
+      </a>
+
+      <a href="https://github.com/devaprakash47" target="_blank" rel="noopener" class="cl">
+        <span class="cl-k">GitHub</span>
+        <span class="cl-v">github.com/devaprakash47</span>
+        <span class="cl-a">↗</span>
+      </a>
+       <a href="https://leetcode.com/u/devaprakash47/" target="_blank" rel="noopener" class="cl">
+        <span class="cl-k">LeetCode</span>
+        <span class="cl-v">leetcode.com/u/devaprakash47</span>
+        <span class="cl-a">↗</span>
+      </a>
+
+      <a href="https://www.hackerrank.com/profile/deva27997" target="_blank" rel="noopener" class="cl">
+        <span class="cl-k">HackerRank</span>
+        <span class="cl-v">hackerrank.com/devaprakash</span>
+        <span class="cl-a">↗</span>
+      </a>
+
+     
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <span>© 2026 Devaprakash S</span>
+    <!-- <span>MCA · Anna University CEG · Chennai</span> -->
+    <div class="footer-links">
+      <a href="https://github.com/devaprakash47" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/devaprakash47" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+<button id="scrollTop" aria-label="Back to top">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
